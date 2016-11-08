@@ -211,3 +211,16 @@ a{
 }
 /*END cities styles*/
 
+/*START name styles*/
+
+.name{
+    position: relative;
+    top: 4px;
+    z-index:200;
+    color: #fff;
+    font-size: 24px;
+    left: 13px;
+}
+
+/*END name styles*/
+
