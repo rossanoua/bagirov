@@ -14,6 +14,7 @@ header {
     min-height:590px;
     margin: 0;
     background-color: #7fff91;
+    border-bottom: 2px solid #0798c7;
 }
 
 .bg_header{
@@ -24,6 +25,8 @@ header {
     position: absolute;
     background: rgba(0, 0, 0, 0) url("../img/bgh1.png") no-repeat scroll -240px 0 / 1910px auto;
 }
+
+
 /*END header styles*/
 
 /*START header nav styles*/
@@ -224,3 +227,86 @@ a{
 
 /*END name styles*/
 
+/*START social styles*/
+
+.social{
+    font-size: 18px;
+    margin: 0 0 0 10px;
+}
+
+.social a{
+    color: #fff;
+}
+
+.social .fa-stack-2x{
+    opacity:0.7;
+}
+
+.social a:hover .fa-stack-2x {
+    opacity:1;
+}
+
+.social .fa-stack-1x{
+    color: #BCCFD6;
+}
+
+/*END social styles*/
+
+/*START services styles*/
+
+.services{
+    background-color: #dae5e9;
+    height:400px;
+}
+
+.services > .wrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items:baseline;;
+}
+
+.services .wrapper .item{
+    width: 174px;
+    color: #3e4040;
+    font-size: 18px;
+    text-align: center;
+    height: 282px;
+    position: relative;
+}
+
+.services .wrapper .item img{
+    width:166px;
+    height:166px;
+    border-radius: 50%;
+    border:2px solid #868a8c;
+    margin: 0 0 0 2px;
+    position: relative;
+    top: -173px;
+}
+
+.services .wrapper .item p{
+    position: relative;
+    top: -177px;
+}
+
+.services .circle{
+    width: 174px;
+    height: 174px;
+    position: relative;
+    top: 0px;
+    border:1px solid #868a8c;
+    border-radius:50%;
+}
+
+.services .wrapper a{
+    width: 175px;
+    height: 283px;
+    position: relative;
+    top: 49px;
+}
+
+.services .wrapper a:hover .circle{
+    border:1px solid #85c2d7;
+}
+
+/*END services styles*/
