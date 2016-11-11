@@ -2,10 +2,13 @@ body{
     background-color: #c6c6c6;
     font-family: 'Roboto', sans-serif;
     font-size:24px;
+    overflow-x: hidden;
+    margin: 0 auto;
 }
 
 .wrapper{
     width:980px;
+    min-width: 980px;
     margin:0 auto;
 }
 /*START header styles*/
@@ -15,6 +18,7 @@ header {
     margin: 0;
     background-color: #7fff91;
     border-bottom: 2px solid #0798c7;
+    max-height: 590px;
 }
 
 .bg_header{
@@ -23,7 +27,7 @@ header {
     width:100%;
     min-height:590px;
     position: absolute;
-    background: rgba(0, 0, 0, 0) url("../img/bgh1.png") no-repeat scroll -240px 0 / 1910px auto;
+    background: rgba(0, 0, 0, 0) url("../img/bgh1.png") no-repeat scroll center 0 / 1910px auto;
 }
 
 
@@ -115,10 +119,10 @@ a{
 
 /*START cities styles*/
 .cities{
-    position: absolute;
+    position: relative;
     height: 400px;
-    left: 830px;
-    top: 130px;
+    left: 600px;
+    top: -235px;
 }
 
 [class^=city]{
@@ -127,7 +131,7 @@ a{
     height:65px;
     width: 600px;
     position: relative;
-    left: -5px;
+    left: -6px;
     margin: 0 0 0 73px;
     padding: 0 0 0 105px;
 }
@@ -141,12 +145,12 @@ a{
 }
 
 .city1{
-    top: -65px;
+    top: -57px;
     z-index: 1;
 }
 
 .city2{
-    top: -18px;
+    top: -104px;
 }
 
 
@@ -210,7 +214,7 @@ a{
 }
 
 #circle2{
-    top: 81px;
+    top: -13px;
 }
 /*END cities styles*/
 
@@ -218,11 +222,11 @@ a{
 
 .name{
     position: relative;
-    top: 4px;
+    top: -380px;
     z-index:200;
     color: #fff;
     font-size: 24px;
-    left: 13px;
+    left: 22px;
 }
 
 /*END name styles*/
@@ -232,6 +236,9 @@ a{
 .social{
     font-size: 18px;
     margin: 0 0 0 10px;
+    left: 20px;
+    position: relative;
+    top: -363px;
 }
 
 .social a{
@@ -261,7 +268,7 @@ a{
 
 .services > .wrapper{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:baseline;;
 }
 
@@ -310,3 +317,135 @@ a{
 }
 
 /*END services styles*/
+
+/*START philosophy styles*/
+
+.philosophy{
+    background-color: #fff;
+    max-height:340px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 340px;
+}
+
+.philosophy > .wrapper{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.philosophy h4{
+    margin: 0 0 14px 0;
+    font-weight: normal;
+    font-size:18px;
+}
+
+.capo{
+    width:200px;
+    height:200px;
+    background: url("../img/a_man.png") no-repeat 0 0 / contain;
+    border-radius: 50%;
+    border:18px solid #ecf2f4;
+}
+
+.words{
+    height:200px;
+    width: 700px;
+    color: #2b2b2b;
+    font-size: 12px;
+    margin: -27px 0 0 15px;
+
+}
+
+.words p{
+    text-indent: 20px;
+    margin:0;
+}
+
+.wrapper p:last-child{
+    margin: 10px 0 0 0;
+    text-indent: 0;
+}
+
+.philosophy .wrapper::before {
+    content: open-quote;
+    color: #edf2f4;
+    font-size: 110px;
+    position: relative;
+    top: -102px;
+    left: 0px;
+
+}
+
+.philosophy .wrapper:after{
+    content: close-quote;
+    color: #edf2f4;
+    font-size: 110px;
+    position: relative;
+    top: 166px;
+    left: 0;
+}
+
+/*END philosophy styles*/
+
+
+/*START gallery styles*/
+
+.gallery{
+    z-index:1000;
+    height:500px;
+    max-height: 500px;
+    position: relative;
+    top: 0;
+    background: rgba(0, 0, 0, 0) url("../img/bg_gallery.png") no-repeat scroll center 0 / cover;
+    min-height: 500px;
+}
+
+.gallery .wrapper h3{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.gallery .slider{
+    margin: 0 auto;
+    width: 900px;
+    height: 455px;
+}
+
+/*END gallery styles*/
+
+
+/*START news styles*/
+
+.news{
+    min-height: 530px;
+    background-color: #fff;
+    padding: 30px 0 0;
+}
+
+.news h3{
+    text-align: center;
+    color: #393939;
+    margin: 0;
+}
+
+.news .nwpr{
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding: 7px;
+}
+
+.news_item img{
+    width: 310px;
+    height: 220px;
+    position: relative;
+}
+
+.news_item{
+    width: 310px;
+}
+
+/*END news styles*/
